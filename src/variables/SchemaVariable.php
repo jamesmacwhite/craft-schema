@@ -9,7 +9,7 @@
  * @copyright Copyright (c) 2017 Rias
  */
 
-namespace rias\schema\variables;
+namespace jamesmacwhite\schema\variables;
 
 use Spatie\SchemaOrg\Schema;
 

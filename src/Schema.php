@@ -1,6 +1,6 @@
 <?php
 /**
- * schema plugin for Craft CMS 3.x.
+ * schema plugin for Craft CMS 5.x.
  *
  * A fluent builder Schema.org types and ld+json generator based on Spatie's schema-org package
  *
@@ -9,11 +9,11 @@
  * @copyright Copyright (c) 2017 Rias
  */
 
-namespace rias\schema;
+namespace jamesmacwhite\schema;
 
 use craft\base\Plugin;
 use craft\web\twig\variables\CraftVariable;
-use rias\schema\variables\SchemaVariable;
+use jamesmacwhite\schema\variables\SchemaVariable;
 use yii\base\Event;
 
 /**
@@ -31,7 +31,7 @@ class Schema extends Plugin
     /**
      * @var Schema
      */
-    public static $plugin;
+    public static Schema $plugin;
 
     // Public Methods
     // =========================================================================
@@ -39,7 +39,7 @@ class Schema extends Plugin
     /**
      * {@inheritdoc}
      */
-    public function init()
+    public function init(): void
     {
         parent::init();
         self::$plugin = $this;
@@ -47,7 +47,7 @@ class Schema extends Plugin
         Event::on(
             CraftVariable::class,
             CraftVariable::EVENT_INIT,
-            function (Event $event) {
+            static function (Event $event) {
                 /** @var CraftVariable $variable */
                 $variable = $event->sender;
                 $variable->set('schema', SchemaVariable::class);
