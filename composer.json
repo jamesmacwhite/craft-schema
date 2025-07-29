@@ -11,8 +11,8 @@
         "schema"
     ],
     "support": {
-        "docs": "https://github.com/jamesmacwhite/schema/blob/master/README.md",
-        "issues": "https://github.com/jamesmacwhite/schema/issues"
+        "docs": "https://github.com/jamesmacwhite/craft-schema/blob/master/README.md",
+        "issues": "https://github.com/jamesmacwhite/craft-schema/issues"
     },
     "license": "MIT",
     "authors": [
@@ -50,7 +50,7 @@
         "schemaVersion": "1.0.0",
         "hasCpSettings": false,
         "hasCpSection": false,
-        "changelogUrl": "https://raw.githubusercontent.com/jamesmacwhite/schema/master/CHANGELOG.md",
+        "changelogUrl": "https://raw.githubusercontent.com/jamesmacwhite/craft-schema/master/CHANGELOG.md",
         "class": "jamesmacwhite\\schema\\Schema"
     },
     "config": {
